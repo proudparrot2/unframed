@@ -21,7 +21,7 @@ var blocked = `
 `
 
 if (window.self != window.top) {
-  if (document.referrer.includes(self.location)) {
+  if (!document.referrer.includes(self.location)) {
     document.querySelector("html").innerHTML = blocked
   }
 }
