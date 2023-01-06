@@ -19,12 +19,11 @@ var blocked = `
   <button class="btn btn-secondary" onclick="UnframedRedirect()">Go to original page</button>
   <button class="btn btn-secondary" onclick="UnframedLearnmore()">Learn more</button>
 `
-localStorage.setItem("url", self.location)
 if (window.self != window.top) {
   if (!document.referrer.includes(self.location)) {
-    if (!self.location.includes(localStorage.getItem("url"))) {
+    //if (!self.location.includes(localStorage.getItem("url"))) {
       document.querySelector("html").innerHTML = blocked 
-    }
+    //}
   }
 }
 
