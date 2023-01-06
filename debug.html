@@ -1,0 +1,7 @@
+<p>Referrer: <span id="referrer"></span></p>
+<p>Location: <span id="location"></span></p>
+
+<script>
+  document.querySelector("#referrer").innerHTML = document.referrer || "N/A"
+  document.querySelector("#location").innerHTML = self.location
+</script>
