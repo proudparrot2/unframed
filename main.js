@@ -21,9 +21,7 @@ var blocked = `
 `
 if (window.self != window.top) {
   if (!document.referrer.includes(self.location)) {
-    //if (!self.location.includes(localStorage.getItem("url"))) {
-      document.querySelector("html").innerHTML = blocked 
-    //}
+    document.querySelector("html").innerHTML = blocked
   }
 }
 
