@@ -1,7 +1,15 @@
 <p>Referrer: <span id="referrer"></span></p>
 <p>Location: <span id="location"></span></p>
+<p>Is in iframe: <span id="isframed"></span></p>
+<p>Frame is same-origin: <span id="sameorigin"></span></p>
 
 <script>
   document.querySelector("#referrer").innerHTML = document.referrer || "N/A"
+  
   document.querySelector("#location").innerHTML = self.location
+  if (window.self != window.top) document.querySelector("#isframed").innerHTML = "Yes"
+  else document.querySelector("#isframed").innerHTML = "No"
+  
+  if (document.referrer.includes(self.location)) document.querySelector("#sameorigin").innerHTML = "Yes"
+  else document.querySelector("#sameorigin").innerHTML = "No"
 </script>
