@@ -9,5 +9,5 @@ Unframed is a tool to help protect your site from people stealing your content w
 ### Installation
 Install Unframed by inserting this script tag at the very bottom of your page:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/proudparrot2/unframed/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/proudparrot2/unframed/latest.js"></script>
 ```
